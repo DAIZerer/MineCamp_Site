@@ -2,6 +2,7 @@
 module.exports = {
   content: ['./**/*.html'],
   theme: {
+    
     colors:{
       'green-lz': '#2BAD72',
       'red-lz': '#884444',
@@ -13,8 +14,8 @@ module.exports = {
       'gray-lz': '##272727',
       'light-gray': '#303030',
       'background-dark-mc': '#0d0d11',
-    },
+      'sp-light-grey': '#151519',
+    }
 
-  },
 }
-
+};
