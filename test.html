@@ -1,54 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="/style/output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/style/output.css" rel="stylesheet">
+    <style>
+        .description {
+            display: none;
+        }
+    </style>
 </head>
-
 <body class="bg-background-dark-mc">
-  <div id="root">
-    <header class="mt-2 mb-6 flex h-10 items-center justify-between gap-3 font-bold text-white-lz md:text-xl">
-      <div class="flex items-center gap-4">
-        <a href="/" class="focusable flex items-center gap-2 rounded-xl text-2xl font-bold text-white-lz">
-          <img class="h-10 w-10" width="40" height="40" src="/assets/img/minecamp.webp" alt=""> Minecamp
-        </a>
-      </div>
-      <div class="flex justify-end gap-4">
-        <a class="cursor-pointer hover:text-green-lz" href="/index.html"> Главная</a>
-        <a class="cursor-pointer hover:text-green-lz" href="/error.html">Ресурспак</a>
-        <a class="cursor-pointer hover:text-green-lz" href="/rule.html">Правила</a>
-      </div>
-    </header>
+    <div id="root">
+        <header class="mt-2 mb-6 flex h-10 items-center justify-between gap-3 font-bold text-white-lz md:text-xl">
+            <!-- header content here -->
+        </header>
+        
+        <section class="flex min-h-[35rem] flex-col justify-center space-y-8 p-4 pr-4 text-center lg:min-h-[45rem] lg:w-1/2 lg:pr-6 lg:text-left xl:min-h-[50rem]">
+            <h1 class="text-4xl font-extrabold leading-[1.25em] text-white-lz md:text-6xl">Текстурпаки для комфортной игры</h1>
 
-    <section class="flex min-h-[35rem] flex-col justify-center space-y-8 p-4 pr-4 text-center lg:min-h-[45rem] lg:w-1/2 lg:pr-6 lg:text-left xl:min-h-[50rem]">
-      <h1 class="text-4xl font-extrabold leading-[1.25em] text-white-lz md:text-6xl">Текстурпаки для комфортной игры</h1>
+            <div class="btn h-fit rounded-2xl bg-green-lz py-8 px-8 text-lg gap-4 font-semibold flex justify-between">
+                <a href="https://www.youtube.com/watch?v=NY2vJ3lIeuQ" class=""> 
+                    Текстурпак сервера
+                </a>
+                <button class="show-description ">Показать описание</button>
+            </div>
 
-      <div class="btn h-fit rounded-2xl bg-green-lz py-8 px-8 text-lg gap-4 font-semibold flex justify-between">
-        <a class="button-description">Текстурпак сервера 1</a>
-        <button class="show-description">Показать описание</button>
-      </div>
-
-      <div class="btn h-fit rounded-2xl bg-green-lz py-8 px-8 text-lg gap-4 font-semibold flex justify-between">
-        <a class="button-description">Текстурпак сервера 2</a>
-        <button class="show-description">Показать описание</button>
-      </div>
-
-      <!-- Add more button and description pairs as needed -->
-
-    </section>
-
-    <div class="description flex-col bg-asphalt-lz rounded-2xl absolute left-[calc(50vw+60px)] bottom-0 hidden w-[30rem] lg:block xl:left-[calc(50vw+140px)] xl:top-[25rem]">
-      <p>Описание текстурпака сервера...</p>
-      <h1 class="text-4xl font-extrabold leading-[1.25em] text-white-lz md:text-6xl">Текстурпаки для комфортной игры</h1>
+           
+            
+            <!-- остальной контент -->
+        </section>
+        <div class="description   flex-col    text-center    bg-sp-light-grey rounded-2xl absolute top-[25rem] left-[calc(50vw+60px)] bottom-0 hidden w-[30rem] lg:block xl:left-[calc(50vw+140px)] xl:top-[25rem] ">
+            <p>Описание текстурпака сервера...</p>
+        </div>
+        <footer>
+            <!-- футер контент здесь -->
+        </footer>
     </div>
 
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        var showDescriptionBtns = document.querySelectorAll('.show-description');
-        var description = document.querySelector('.description');
-        var buttonDescriptions = document.querySelectorAll('.button-description');
+        document.addEventListener('DOMContentLoaded', function() {
+            var showDescriptionBtn = document.querySelector('.show-description');
+            var description = document.querySelector('.description');
 
-        showDescriptionBtns.forEach(function (btn, index
+            showDescriptionBtn.addEventListener('click', function() {
+                if (description.style.display === 'none') {
+                    description.style.display = 'block';
+                } else {
+                    description.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
