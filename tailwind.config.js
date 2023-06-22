@@ -2,7 +2,12 @@
 module.exports = {
   content: ['./**/*.html'],
   theme: {
-    
+    extend: {
+      backgroundImage: {
+        
+        'minecraft-img': "url('/assets/img/bg-panel.png)",
+      }
+    },
     colors:{
       'green-lz': '#2BAD72',
       'red-lz': '#884444',
