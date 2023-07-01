@@ -12,9 +12,9 @@
         <header class="mt-2 mb-6 flex h-10 items-center justify-between gap-3 font-bold text-white-lz md:text-xl">
             <div class="flex items-center gap-4"><a href="/" class="focusable flex items-center gap-2 rounded-xl text-2xl font-bold text-white-lz"><img class="h-10 w-10" width="40" height="40" src="/assets/img/minecamp.webp" alt=""> Minecamp</a> </div>
             <div class="flex justify-end gap-4">
-            <a class="cursor-pointer hover:text-green-lz bottom-0 hidden" href="/index.html"> Главная</a>
+            <a class="cursor-pointer hover:text-green-lz bottom-0 hidden  lg:block" href="/index.html"> Главная</a>
 
-            <a class="cursor-pointer hover:text-green-lz" href="/texturepack.html">Ресурспак</a>
+            <a class="cursor-pointer hover:text-green-lz bottom-0 hidden  lg:block" href="/texturepack.html">Ресурспак</a>
             <a class="cursor-pointer hover:text-green-lz" href="/rule.html">Правила</a>
 
 
@@ -44,7 +44,8 @@
         </section>
         <img class="absolute top-[25rem] left-[calc(50vw+60px)] bottom-0 hidden w-[30rem] lg:block xl:left-[calc(50vw+140px)] xl:top-[25rem]  " src="/assets/img/minecraft_title.png">
         <!-- </section> -->
-        <section class="w-full h-80 bg-signal-lz bottom-0 hidden justify-center md:flex md:flex-col space-y-4 rounded-2xl relative gap-10">
+        <!-- <section class="w-full h-80 bg-signal-lz bottom-0 hidden justify-center md:flex md:flex-col space-y-4 rounded-2xl relative gap-10"> -->
+            <section class="w-full h-80 bg-gradient-to-l from-gradient-black-one to-gradient-light-one bottom-0 hidden justify-center md:flex md:flex-col space-y-4 rounded-2xl relative gap-7">
             <h1 class="text-4xl font-extrabold leading-[1.25em] text-white-lz md:text-6xl pl-8">Разработчики:</h1>
             <p class="text-green-lz font-normal text-lg pl-8">
                 Тут должен быть долгий текст о том какая у нас <br> огромная команда разработчиков. Но разработчик только один.
@@ -55,10 +56,12 @@
         <h1 class="text-4xl font-extrabold leading-[1.25em] text-white-lz md:text-6xl mt-14">Наши сервера </h1>
         <div class="w-full h-screen mt-14 group relative group grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
 
-                   <div class="bg-sp-light-grey w-15 h-96 rounded-xl group block border-6 border-gray-brown-lz  transition-all  lg:grid-cols-[1fr,10rem]"></div>
-                   <div class="bg-sp-light-grey h-96 rounded-xl group block transition-all  lg:grid-cols-[1fr,10rem]"></div>
+                   <div class="bg-sp-light-grey w-15 h-96 rounded-xl group block border-6 border-gray-brown-lz  transition-all  lg:grid-cols-[1fr,10rem]">
+                    <div class="text-center  font-mono text-white-lz">На даный момент сервер находится на стадии разработки...</div>
+                   </div>
+                   <!-- <div class="bg-sp-light-grey h-96 rounded-xl group block transition-all  lg:grid-cols-[1fr,10rem]"></div>
                    <div class="bg-sp-light-grey h-96 rounded-xl group block transition-all lg:grid-cols-[1fr,10rem]"></div>
-                   <div class="bg-sp-light-grey w-15 h-96 rounded-xl group block transition-all  lg:grid-cols-[1fr,10rem]"></div>
+                   <div class="bg-sp-light-grey w-15 h-96 rounded-xl group block transition-all  lg:grid-cols-[1fr,10rem]"></div> -->
                    
         </div>
         

@@ -20,6 +20,8 @@ module.exports = {
       'light-gray': '#303030',
       'background-dark-mc': '#0d0d11',
       'sp-light-grey': '#151519',
+      'gradient-black-one': '#1a2134',
+      'gradient-light-one': '#233f4a',
     }
 
 }
